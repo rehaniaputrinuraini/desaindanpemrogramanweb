@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Mahasiswa Baru</h2>
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama_lengkap" required><br><br>
+        
+        <label>Tempat/Tanggal Lahir:</label>
+        <input type="text" name="tempat_lahir" required>
+        <select name="tanggal">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <!-- Tambahkan opsi lainnya -->
+        </select>
+        <select name="bulan">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <!-- Tambahkan opsi lainnya -->
+        </select>
+        <select name="tahun">
+            <option>1989</option>
+            <option>1990</option>
+            <option>1991</option>
+            <!-- Tambahkan opsi lainnya -->
+        </select>
+        <br><br>
+        
+        <label>Agama:</label>
+        <select name="agama">
+            <option>-PILIH-</option>
+            <option>Islam</option>
+            <option>Kristen</option>
+            <option>Hindu</option>
+            <option>Buddha</option>
+            <option>Konghucu</option>
+        </select>
+        <br><br>
+        
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+        <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+        <br><br>
+        
+        <label>No. Ijazah SMA/MA:</label>
+        <input type="text" name="no_ijazah" required>
+        <br><br>
+        
+        <label>Foto (Ukuran Maks. 20KB):</label>
+        <input type="file" name="foto" accept="image/*">
+        <br><br>
+        
+        <label>Nama Ayah:</label>
+        <input type="text" name="nama_ayah">
+        <br><br>
+        
+        <label>Nama Ibu:</label>
+        <input type="text" name="nama_ibu">
+        <br><br>
+        
+        <label>Alamat Rumah:</label><br>
+        <textarea name="alamat_rumah" rows="3" cols="30"></textarea>
+        <br><br>
+        
+        <label>No. Telp:</label>
+        <input type="text" name="no_telp">
+        <br><br>
+        
+        <label>Nama Sekolah Asal:</label>
+        <input type="text" name="nama_sekolah_asal">
+        <br><br>
+        
+        <label>Alamat Sekolah Asal:</label><br>
+        <textarea name="alamat_sekolah_asal" rows="3" cols="30"></textarea>
+        <br><br>
+        
+        <label>Jurusan Dipilih:</label>
+        <select name="jurusan">
+            <option>-PILIH-</option>
+            <option>Teknik Informatika</option>
+            <option>Manajemen</option>
+            <option>Akuntansi</option>
+            <!-- Tambahkan opsi lainnya -->
+        </select>
+        <br><br>
+        
+        <label>Tahu informasi ini dari:</label>
+        <input type="checkbox" name="sumber_info" value="Koran"> Koran
+        <input type="checkbox" name="sumber_info" value="Website"> Website
+        <input type="checkbox" name="sumber_info" value="Televisi"> Televisi
+        <input type="checkbox" name="sumber_info" value="Radio"> Radio
+        <input type="checkbox" name="sumber_info" value="Teman"> Teman
+        <br><br>
+        
+        <button type="submit">DAFTAR</button>
+        <button type="reset">BATAL</button>
+    </form>
+</body>
+</html>
