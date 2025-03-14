@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Beranda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="rehania putri nur aini">
+    <meta name="nim" content="243307087">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 600px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+    <section>
+        <nav>
+            <ul></ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gambar">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+            </ul>
+        </nav>
+
+    <article>
+    <h1>Judul Artikel</h1>
+    <h1>Gambar Pemandangan</h1>
+    <img src="gambar.jpg" alt="Pemandangan" width="250px" height="150px">
+    <img src="gambar1.jpg" alt="Pemandangan cantik" width="250px" height="150px">
+    <img src="gambar2.jpg" alt="Pemandangan oke" width="250px" height="150px">
+    <img src="gambar4.jpg" alt="Pemandangan cerah" width="250px" height="150px">
+    <img src="gambar5.jpg" alt="Pemandangan pegunungan" width="250px" height="150px">
+    <img src="gambar6.jpg" alt="Pemandangan langka" width="250px" height="150px">
+    <p>pada halaman web struktur header menampilkan judul, menu navigasi, dan gambar pemandangan.</p>
+    </article>
+    </section>
+
+    <footer>
+        <p>@copyright rehania putri nur aini_243307087</p>
+    </footer>
+ 
+</head>
+</html>
