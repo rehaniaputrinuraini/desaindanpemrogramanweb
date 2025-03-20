@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>combinator selector</title>
+
+        <style>
+            div p {
+                color: red;
+            }
+            div > p {
+                background-color: yellow;
+            }
+            div + p {
+                background-color: darkgray;
+            }
+            div ~ p {
+                color: cyan;
+            }
+        </style>
+        <body>
+            <div>
+                <p>This is a paragraph. Kode div p { color: red; } mengubah warna teks semua p di dalam div menjadi merah, tetapi tidak mempengaruhi p di luar div.</p>
+                <p> This is a paragraph. Kode div > p { background-color: yellow; } memberi latar belakang kuning hanya pada elemen p yang merupakan anak langsung dari div, bukan yang bersarang lebih dalam.</p>
+            </div>
+            <p> This is a paragraph. Kode div + p { background-color: darkgray; } memberi latar belakang abu-abu gelap pada p yang langsung berada setelah div.</p>
+            <p> This is a paragraph. Kode div ~ p { color: cyan; } mengubah warna teks semua elemen p yang bersaudara (sibling) setelah div menjadi cyan.</p>
+        </body>
+    </head>
+
+</html>
+    
